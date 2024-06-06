@@ -13,6 +13,11 @@ const Hero = () => {
     window.location.href = "https://github.com/Kelvin2212";
   };
 
+  const redirectToCV = () => {
+    window.location.href =
+      "https://drive.google.com/file/d/1VW02ixXQTBcAH248RQg3WRdIXSqGUrZl/view?usp=sharing";
+  };
+
   useEffect(() => {
     const container = document.getElementById("lottie-container");
     if (container) {
@@ -42,7 +47,10 @@ const Hero = () => {
             Fresh Graduate Informatics with 1+ years of professional experience.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
-            <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+            <button
+              onClick={redirectToCV}
+              className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
+            >
               <p>Download CV</p>
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
             </button>
