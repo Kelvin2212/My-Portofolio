@@ -6,7 +6,7 @@ import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
 
-import animationData from "/public/animation.json"; // Replace 'your-animation.json' with your animation file
+import animationData from "../public/animation.json";
 
 const Hero = () => {
   const redirectToGithub = () => {
