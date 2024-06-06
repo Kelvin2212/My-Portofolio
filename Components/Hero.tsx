@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="w-[500px] hidden bg-[#fffff] relative lg:flex items-center rounded-full h-[500px]">
           <div
             id="lottie-container"
-            style={{ width: "100%", height: "110%" }}
+            style={{ width: "100%", height: "130%" }}
           ></div>
         </div>
       </div>
