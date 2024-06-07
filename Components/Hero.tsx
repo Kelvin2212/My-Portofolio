@@ -6,7 +6,7 @@ import TextEffect from "./TextEffect";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
 
-import animationData from "../public/animation.json";
+// import animationData from "../public/animation.json";
 
 const Hero = () => {
   const redirectToGithub = () => {
@@ -18,18 +18,18 @@ const Hero = () => {
       "https://drive.google.com/file/d/1VW02ixXQTBcAH248RQg3WRdIXSqGUrZl/view?usp=sharing";
   };
 
-  useEffect(() => {
-    const container = document.getElementById("lottie-container");
-    if (container) {
-      lottie.loadAnimation({
-        container: container,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        animationData: animationData,
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   const container = document.getElementById("lottie-container");
+  //   if (container) {
+  //     lottie.loadAnimation({
+  //       container: container,
+  //       renderer: "svg",
+  //       loop: false,
+  //       autoplay: false,
+  //       animationData: animationData,
+  //     });
+  //   }
+  // }, []);
 
   return (
     <div
@@ -67,10 +67,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-[500px] hidden bg-[#fffff] relative lg:flex items-center rounded-full h-[500px]">
-          <div
+          {/* <div
             id="lottie-container"
             style={{ width: "100%", height: "130%" }}
-          ></div>
+          ></div> */}
         </div>
       </div>
     </div>
