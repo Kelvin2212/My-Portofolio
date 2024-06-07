@@ -24,8 +24,8 @@ const Hero = () => {
       lottie.loadAnimation({
         container: container,
         renderer: "svg",
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         animationData: animationData,
       });
     }
