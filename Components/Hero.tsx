@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
-import lottie from "lottie-web";
+// import lottie from "lottie-web";
 import Particle from "./Particle";
 import TextEffect from "./TextEffect";
 import Image from "next/image";
