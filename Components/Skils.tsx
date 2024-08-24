@@ -32,28 +32,32 @@ const Skils = () => {
             percentage3={85}
           />
         </div>
-        <div className="bottom-2 mt-[1.4rem]">
-          <SkilsItem
-            title="Flutter"
-            year="2021 - 2022"
-            subtitle="Learn the basics of creating website displays, statistical and dynamic mobile, ensuring responsive website displays across devices, enabling a seamless user experience."
-          />
-          <SkilsItem
-            title="Next Js"
-            year="2023 - 2024"
-            subtitle="Learn to become a full stack developer by creating a dynamic and responsive website display, as well as creating APIs and querying data from the database"
-          />
-          <SkilsLanguage
-            skill1="React Js"
-            skill2="Flutter"
-            skill3="TypeScript"
-            level1="w-[88%]"
-            level2="w-[90%]"
-            level3="w-[75%]"
-            percentage1={88}
-            percentage2={90}
-            percentage3={75}
-          />
+        <div className="relative">
+          <div className="mt-[0.8rem] mb-[10rem]">
+            <SkilsItem
+              title="Flutter"
+              year="2021 - 2022"
+              subtitle="Learn the basics of creating website displays, statistical and dynamic mobile, ensuring responsive website displays across devices, enabling a seamless user experience."
+            />
+            <SkilsItem
+              title="Next Js"
+              year="2023 - 2024"
+              subtitle="Learn to become a full stack developer by creating a dynamic and responsive website display, as well as creating APIs and querying data from the database."
+            />
+          </div>
+          <div className="mt-[10rem] mb-[4rem]">
+            <SkilsLanguage
+              skill1="React Js"
+              skill2="Flutter"
+              skill3="TypeScript"
+              level1="w-[88%]"
+              level2="w-[90%]"
+              level3="w-[75%]"
+              percentage1={88}
+              percentage2={90}
+              percentage3={75}
+            />
+          </div>
         </div>
       </div>
     </div>
