@@ -444,6 +444,86 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        <div data-aos="fade-up">
+          <div className="container mx-auto">
+            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/project12.png"
+                  alt="portofolio"
+                  layout="responsive"
+                  width={300}
+                  height={200}
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-medium text-gray-300">
+                  E-commerce Forever
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">
+                  An ecommerce website that provides various types of men's and
+                  women's clothing, ranging from for adults, young people and
+                  children.
+                </p>
+                <div className="mt-4">
+                  <a
+                    href="https://github.com/Kelvin2212/ecommerce-forever"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
+                  >
+                    <img
+                      src="/images/github.png"
+                      alt="GitHub Logo"
+                      className="w-5 h-5"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <div className="container mx-auto">
+            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
+              <div className="relative overflow-hidden">
+                <Image
+                  src="/images/project13.png"
+                  alt="portofolio"
+                  layout="responsive"
+                  width={300}
+                  height={200}
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-medium text-gray-300">
+                  Prescripto Booked Doctor
+                </h3>
+                <p className="mt-1 text-sm text-gray-500">
+                  A doctor booking website that is served by professional
+                  doctors and provides various types of consultations, such as
+                  General physician and others.
+                </p>
+                <div className="mt-4">
+                  <a
+                    href="https://github.com/Kelvin2212/prescripto-booked-doctor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
+                  >
+                    <img
+                      src="/images/github.png"
+                      alt="GitHub Logo"
+                      className="w-5 h-5"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
