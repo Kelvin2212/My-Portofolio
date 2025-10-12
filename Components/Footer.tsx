@@ -60,7 +60,7 @@ const Footer = () => {
 
       <div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between">
         <div className="text-[16px] mb-[2rem] md:mb-0 text-white opacity-20">
-          © Kelvin Samuel 2024
+          © Kelvin Samuel 2025
         </div>
         <div className="flex items-center justify-center md:justify-end space-x-10">
           <p className="text-[16px] text-white opacity-20">Terms & Condition</p>

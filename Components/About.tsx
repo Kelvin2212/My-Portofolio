@@ -15,14 +15,14 @@ const About = () => {
           </h2>
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <p className="text-[19px] text-slate-300 w-[80%]">
-              Fresh informatics graduates are skilled in Front-End Development
-              and Mobile Development. With over 1 year of experience, I have
-              created stunning visual designs for multiple platforms and built
-              dynamic user interfaces for web and mobile applications. Hungry to
-              learn new things and solve problems, I bring a unique and
-              versatile skill set. Ready to contribute to innovative projects, I
-              am committed to staying at the forefront of technology and making
-              a meaningful impact.
+              A passionate Fullstack Developer with 2 years of experience in
+              both front-end and back-end development. Skilled in creating
+              seamless user experiences and building robust, scalable systems
+              for web and mobile applications. With a strong foundation in
+              informatics and a drive for continuous learning, I’m dedicated to
+              solving complex problems, delivering high-quality solutions, and
+              staying at the forefront of technology to make a meaningful impact
+              on every project.
             </p>
           </div>
           <button

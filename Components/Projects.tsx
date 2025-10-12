@@ -2,530 +2,180 @@
 import Image from "next/image";
 import React from "react";
 
-const Projects = () => {
-  return (
-    <div id="project" className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[1rem]">
-      <h1 className="heading">
-        Pro <span className="text-yellow-400">Ject</span>
-      </h1>
-      <div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project1.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Nekoya Website
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  The e-commerce platform takes the form of a website and
-                  provides various types of shoes from several shoe brands.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Nekoya-Site/Web"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+type Project = {
+  title: string;
+  image: string;
+  description: string;
+  link?: string;
+};
 
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project2.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Nekoya App
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  The e-commerce platform takes the form of an app and provides
-                  various types of shoes from several shoe brands.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Nekoya-Site/App"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+const projects: Project[] = [
+  {
+    title: "Nekoya Website",
+    image: "/images/project1.png",
+    description:
+      "The e-commerce platform takes the form of a website and provides various types of shoes from several shoe brands.",
+    link: "https://github.com/Nekoya-Site/Web",
+  },
+  {
+    title: "Nekoya App",
+    image: "/images/project2.png",
+    description:
+      "The e-commerce platform takes the form of an app and provides various types of shoes from several shoe brands.",
+    link: "https://github.com/Nekoya-Site/App",
+  },
+  {
+    title: "Easy Learn",
+    image: "/images/project3.png",
+    description:
+      "A useful application for children to learn English and pronounce it, and can be a learning medium to learn spelling.",
+    link: "https://github.com/Easy-Learn/App",
+  },
+  {
+    title: "Netflix Clone",
+    image: "/images/project4.png",
+    description:
+      "A website that resembles the netflix interface design that provides high resolution and provides the latest obtained from the movie database.",
+    link: "https://github.com/Kelvin2212/Netflix-Clone",
+  },
+  {
+    title: "Syncronus App",
+    image: "/images/project5.png",
+    description:
+      "A website that provides realtime chatting services and provides several features such as sending images, files and emoticons.",
+    link: "https://github.com/Kelvin2212/syncronus-chat-app",
+  },
+  {
+    title: "Tomato Food Delivery App",
+    image: "/images/project6.png",
+    description:
+      "A website that provides various types of food, as well as providing services for food delivery and providing various types of payment methods.",
+    link: "https://github.com/Kelvin2212/food-delivery",
+  },
+  {
+    title: "Spotify Clone",
+    image: "/images/project7.png",
+    description:
+      "A website with a Spotify-like interface design offers a modern, intuitive music listening experience and crisp, optimized sound.",
+    link: "https://github.com/Kelvin2212/Spotify-Clone",
+  },
+  {
+    title: "Gemini Clone",
+    image: "/images/project8.png",
+    description:
+      "A website with a gemini-like interface design and provides a wide variety of features such as files and images and uses the gemini api",
+    link: "https://github.com/Kelvin2212/Gemini-Clone",
+  },
+  {
+    title: "Cryptoplace",
+    image: "/images/project9.png",
+    description:
+      "A website that provides a feature to see the ups and downs of cyptocurrency market prices with various types of coins that exist.",
+    link: "https://github.com/Kelvin2212/Cryptoplace",
+  },
+  {
+    title: "Edusity",
+    image: "/images/project10.png",
+    description:
+      "A university website that provides various types of majors and various levels of education from bachelor's, master's and doctoral degrees.",
+    link: "https://github.com/Kelvin2212/Edusity",
+  },
+  {
+    title: "Blog App",
+    image: "/images/project11.png",
+    description:
+      "A blog website for writing forums, sharing stories, lessons learned, sharing personal experiences, and writing informative articles.",
+    link: "https://github.com/Kelvin2212/Blog-App",
+  },
+  {
+    title: "E-commerce Forever",
+    image: "/images/project12.png",
+    description:
+      "An ecommerce website that provides various types of men's and women's clothing, ranging from for adults, young people and children.",
+    link: "https://github.com/Kelvin2212/ecommerce-forever",
+  },
+  {
+    title: "Prescripto Booked Doctor",
+    image: "/images/project13.png",
+    description:
+      "A doctor booking website that is served by professional doctors and provides various types of consultations, such as General physician and others.",
+    link: "https://github.com/Kelvin2212/prescripto-booked-doctor",
+  },
+  {
+    title: "Stock Management System",
+    image: "/images/project14.jpg",
+    description:
+      "Stock Management application platform designed to help businesses manage operations efficiently. The application includes comprehensive features such as inventory management, point of sale (POS) system, customer management, analytics dashboard, and sales and product tracking to monitor business performance in real time.",
+  },
+];
 
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project3.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Easy Learn
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A useful application for children to learn English and
-                  pronounce it, and can be a learning medium to learn spelling.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Easy-Learn/App"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project4.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Netflix Clone
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A website that resembles the netflix interface design that
-                  provides high resolution and provides the latest obtained from
-                  the movie database.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/Netflix-Clone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project5.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Syncronus App
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A website that provides realtime chatting services and
-                  provides several features such as sending images, files and
-                  emoticons.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/syncronus-chat-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project6.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Tomato Food Delivery App
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A website that provides various types of food, as well as
-                  providing services for food delivery and providing various
-                  types of payment methods.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/food-delivery"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project7.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Spotify Clone
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A website with a Spotify-like interface design offers a
-                  modern, intuitive music listening experience and crisp,
-                  optimized sound.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/Spotify-Clone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project8.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Gemini Clone
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A website with a gemini-like interface design and provides a
-                  wide variety of features such as files and images and uses the
-                  gemini api.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/Gemini-Clone"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project9.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Cryptoplace
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A website that provides a feature to see the ups and downs of
-                  cyptocurrency market prices with various types of coins that
-                  exist.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/Cryptoplace"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project10.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">Edusity</h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A university website that provides various types of majors and
-                  various levels of education from bachelor's, master's and
-                  doctoral degrees.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/Edusity"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project11.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">Blog App</h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A blog website for writing forums, sharing stories, lessons
-                  learned, sharing personal experiences, and writing informative
-                  articles.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/Blog-App"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project12.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  E-commerce Forever
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  An ecommerce website that provides various types of men's and
-                  women's clothing, ranging from for adults, young people and
-                  children.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/ecommerce-forever"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-up">
-          <div className="container mx-auto">
-            <div className="max-w-xs mx-auto overflow-hidden rounded-lg shadow-lg bg-gray-900">
-              <div className="relative overflow-hidden">
-                <Image
-                  src="/images/project13.png"
-                  alt="portofolio"
-                  layout="responsive"
-                  width={300}
-                  height={200}
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-medium text-gray-300">
-                  Prescripto Booked Doctor
-                </h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  A doctor booking website that is served by professional
-                  doctors and provides various types of consultations, such as
-                  General physician and others.
-                </p>
-                <div className="mt-4">
-                  <a
-                    href="https://github.com/Kelvin2212/prescripto-booked-doctor"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-300 hover:text-gray-400"
-                  >
-                    <img
-                      src="/images/github.png"
-                      alt="GitHub Logo"
-                      className="w-5 h-5"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+const ProjectCard: React.FC<Project> = ({
+  image,
+  title,
+  description,
+  link,
+}) => (
+  <div
+    data-aos="fade-up"
+    className="bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-yellow-400/30 transition-shadow duration-300 flex flex-col h-full"
+  >
+    <div className="relative w-full h-[200px]">
+      <Image
+        src={image}
+        alt={title}
+        fill
+        className="object-cover transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+
+    <div className="p-4 flex flex-col justify-between flex-grow">
+      <div>
+        <h3 className="text-xl font-medium text-gray-300">{title}</h3>
+        <p className="mt-2 text-sm text-gray-500 whitespace-normal overflow-visible text-clip">
+          {description}
+        </p>
+      </div>
+
+      <div className="mt-4 h-[28px] flex items-center">
+        {link ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-gray-300 hover:text-yellow-400 transition-colors"
+          >
+            <Image
+              src="/images/github.png"
+              alt="GitHub"
+              width={20}
+              height={20}
+            />
+            <span className="text-sm">View on GitHub</span>
+          </a>
+        ) : (
+          <div className="w-full h-[24px]" />
+        )}
       </div>
     </div>
+  </div>
+);
+
+const Projects: React.FC = () => {
+  return (
+    <section
+      id="project"
+      className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[4rem]"
+    >
+      <h1 className="heading text-center mb-[3rem]">
+        Pro <span className="text-yellow-400">Ject</span>
+      </h1>
+
+      <div className="w-[85%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
+        {projects.map((p, i) => (
+          <ProjectCard key={i} {...p} />
+        ))}
+      </div>
+    </section>
   );
 };
 
