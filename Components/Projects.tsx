@@ -14,21 +14,21 @@ const projects: Project[] = [
     title: "Nekoya Website",
     image: "/images/project1.png",
     description:
-      "The e-commerce platform takes the form of a website and provides various types of shoes from several shoe brands.",
+      "The e-commerce platform takes the form of a website and provides various types of shoes from several shoes brands.",
     link: "https://github.com/Nekoya-Site/Web",
   },
   {
     title: "Nekoya App",
     image: "/images/project2.png",
     description:
-      "The e-commerce platform takes the form of an app and provides various types of shoes from several shoe brands.",
+      "The e-commerce platform takes the form of an app and provides various types of shoes from several shoes brands.",
     link: "https://github.com/Nekoya-Site/App",
   },
   {
     title: "Easy Learn",
     image: "/images/project3.png",
     description:
-      "A useful application for children to learn English and pronounce it, and can be a learning medium to learn spelling.",
+      "A useful application for children to learn English and pronounce it, and can be a learning media to learn spelling.",
     link: "https://github.com/Easy-Learn/App",
   },
   {

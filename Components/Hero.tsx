@@ -43,7 +43,7 @@ const Hero = () => {
           </h1>
           <TextEffect />
           <p className="mt-[1.5rem] text-[18px] text-[#ffffff92]">
-            Fresh Graduate Informatics with 1+ years of professional experience.
+            Fullstack Developer with 2+ years of professional experience.
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
             <button
