@@ -14,7 +14,7 @@ const Hero = () => {
 
   const redirectToCV = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1ryFna5wvbkn1erpFu3mlVWJXs8rehglq/view?usp=sharing";
+      "https://drive.google.com/file/d/1UhmbtqreoiLqFu5xtJ8arRRAo92QMTJc/view?usp=sharing";
   };
 
   useEffect(() => {
